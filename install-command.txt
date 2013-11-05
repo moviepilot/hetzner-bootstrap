@@ -1,1 +1,1 @@
-SERVERNAME=your.fully.qualified.server.name bash < <(wget -qO - https://raw.github.com/ctavan/hetzner-bootstrap/basenode-2.7/hetzner-installimage.sh)
+SERVERNAME=your.fully.qualified.server.name bash < <(wget -qO - https://raw.github.com/ctavan/hetzner-bootstrap/hadoop-2.7/hetzner-installimage.sh)
