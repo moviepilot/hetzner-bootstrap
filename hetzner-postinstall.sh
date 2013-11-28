@@ -10,7 +10,7 @@ dpkg -i puppet-common_2.7.23-1puppetlabs1_all.deb
 dpkg -i puppet_2.7.23-1puppetlabs1_all.deb
 mkdir /root/.ssh
 chmod 700 /root/.ssh
-wget -O /root/.ssh/authorized_keys https://raw.github.com/ctavan/hetzner-bootstrap/hadoop-2.7/root-ssh-authorizedkeys.pub
+wget -O /root/.ssh/authorized_keys https://raw.github.com/ctavan/hetzner-bootstrap/hadoop/root-ssh-authorizedkeys.pub
 # please add you custom postinstall commands here
 # you should keep in mind, that this script is run inside a chrooted
 # envorinment of the freshly installed server, so every change here
