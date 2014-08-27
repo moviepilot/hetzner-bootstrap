@@ -1,7 +1,7 @@
 #!/bin/bash
 apt-get update
 apt-get -y upgrade
-apt-get -y install byobu wget ruby libxmlrpc-ruby libopenssl-ruby libaugeas-ruby virt-what
+apt-get -y install byobu wget ruby libaugeas-ruby virt-what
 wget http://apt.puppetlabs.com/pool/trusty/main/f/facter/facter_2.0.2-1puppetlabs1_amd64.deb
 wget http://apt.puppetlabs.com/pool/trusty/main/p/puppet/puppet-common_3.6.2-1puppetlabs1_all.deb
 wget http://apt.puppetlabs.com/pool/trusty/main/p/puppet/puppet_3.6.2-1puppetlabs1_all.deb
