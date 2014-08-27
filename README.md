@@ -5,7 +5,7 @@ Script for fully automated Hetzner root server setup from rescue mode.
 
 This script is only needed, when you are hosting root servers at hetzner
 and want to (re-)setup a server. This version of the script assumes you
-want to install Ubuntu 12.04 precise 64bit minimal and you want a
+want to install Ubuntu 14.04 trusty 64bit minimal and you want a
 software raid 1, with a 1GB /boot ext3 and ext4 for the rest of your
 disk. If that doesn't fit your needs, feel free to consult the
 installimage documentation and patch `hetzner-installimage.sh.template`
