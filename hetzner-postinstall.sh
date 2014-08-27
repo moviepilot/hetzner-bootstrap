@@ -1,11 +1,13 @@
 #!/bin/bash
 apt-get update
 apt-get -y upgrade
-apt-get -y install byobu wget ruby libaugeas-ruby virt-what
+apt-get -y install byobu wget ruby libaugeas-ruby virt-what ruby-shadow ruby-rgen ruby-json
 wget http://apt.puppetlabs.com/pool/trusty/main/f/facter/facter_2.0.2-1puppetlabs1_amd64.deb
+wget https://apt.puppetlabs.com/pool/trusty/main/h/hiera/hiera_1.3.4-1puppetlabs1_all.deb
 wget http://apt.puppetlabs.com/pool/trusty/main/p/puppet/puppet-common_3.6.2-1puppetlabs1_all.deb
 wget http://apt.puppetlabs.com/pool/trusty/main/p/puppet/puppet_3.6.2-1puppetlabs1_all.deb
 dpkg -i facter_2.0.2-1puppetlabs1_amd64.deb
+dpkg -i hiera_1.3.4-1puppetlabs1_all.deb
 dpkg -i puppet-common_3.6.2-1puppetlabs1_all.deb
 dpkg -i puppet_3.6.2-1puppetlabs1_all.deb
 mkdir /root/.ssh
