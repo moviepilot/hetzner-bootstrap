@@ -2,7 +2,7 @@
 apt-get update
 apt-get -y upgrade
 apt-get -y install --install-recommends linux-generic-lts-trusty
-apt-get -y install byobu wget ruby1.8 libxmlrpc-ruby libopenssl-ruby libshadow-ruby1.8 libaugeas-ruby1.8 virt-what
+apt-get -y tmux curl wget ruby ruby1.8 libxmlrpc-ruby libopenssl-ruby libshadow-ruby1.8 libaugeas-ruby1.8 virt-what libjson-ruby
 
 wget -O /tmp/facter_1.7.3-1puppetlabs1_amd64.deb http://apt.puppetlabs.com/pool/precise/main/f/facter/facter_1.7.3-1puppetlabs1_amd64.deb
 wget -O /tmp/puppet-common_2.7.26-1puppetlabs1_all.deb http://apt.puppetlabs.com/pool/precise/main/p/puppet/puppet-common_2.7.26-1puppetlabs1_all.deb
