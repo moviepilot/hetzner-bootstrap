@@ -1,7 +1,6 @@
 #!/bin/bash
 apt-get update
-apt-get -y upgrade
-apt-get -y install --install-recommends linux-generic-lts-trusty
+apt-get -y dist-upgrade
 apt-get -y install tmux curl wget puppet
 
 sed -i '/templatedir/a pluginsync=true' /etc/puppet/puppet.conf
