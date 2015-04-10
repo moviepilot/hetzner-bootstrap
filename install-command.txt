@@ -1,0 +1,1 @@
+SERVERNAME=your.fully.qualified.server.name bash < <(wget -qO - https://raw.github.com/moviepilot/hetzner-bootstrap/puppet-express/hetzner-installimage.sh)
