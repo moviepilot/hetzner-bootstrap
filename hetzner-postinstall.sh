@@ -9,7 +9,7 @@ apt-get -y install byobu curl wget
 wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb
 dpkg -i puppetlabs-release-trusty.deb
 apt-get update
-apt-get puppet
+apt-get install puppet
 sed -i '/templatedir/a pluginsync=true' /etc/puppet/puppet.conf
 
 # install default ssh keys
