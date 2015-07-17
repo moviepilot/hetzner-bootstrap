@@ -6,10 +6,10 @@ apt-get -y dist-upgrade
 apt-get -y install byobu curl wget
 
 # install puppet
-wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb
-dpkg -i puppetlabs-release-trusty.deb
+wget https://apt.puppetlabs.com/puppetlabs-release-pc1-trusty.deb
+dpkg -i puppetlabs-release-pc1-trusty.deb
 apt-get update
-apt-get -y install puppet tmux
+apt-get -y install puppet-agent tmux
 sed -i '/templatedir/a pluginsync=true' /etc/puppet/puppet.conf
 
 # install default ssh keys
