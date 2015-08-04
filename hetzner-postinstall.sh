@@ -16,3 +16,6 @@ sed -i '/templatedir/a pluginsync=true' /etc/puppet/puppet.conf
 mkdir /root/.ssh
 chmod 700 /root/.ssh
 wget -O /root/.ssh/authorized_keys https://raw.github.com/moviepilot/hetzner-bootstrap/puppet-express/root-ssh-authorizedkeys.pub
+
+# setting full hostname to /etc/hostname
+hostnamectl set-hostname $(hostname -f)
