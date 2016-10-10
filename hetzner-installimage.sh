@@ -6,5 +6,5 @@ if [[ -n "$VALIDHOSTNAME" ]]; then
   echo "the provided SERVERNAME '${SERVERNAME}' is either invalid or empty"
   exit 1
 else
-  /root/.oldroot/nfs/install/installimage -a -p /boot:ext3:1G,/:ext4:all -r yes -l 1 -b grub -d sda,sdb -i /root/.oldroot/nfs/install/../images/Ubuntu-1404-trusty-64-minimal.tar.gz -x hetzner-postinstall.sh -n ${SERVERNAME}
+  /root/.oldroot/nfs/install/installimage -a -p /boot:ext3:1G,/:ext4:all -r yes -l 1 -b grub -d sda,sdb -i /root/.oldroot/nfs/install/../images/Ubuntu-1604-xenial-64-minimal.tar.gz -x hetzner-postinstall.sh -n ${SERVERNAME}
 fi
