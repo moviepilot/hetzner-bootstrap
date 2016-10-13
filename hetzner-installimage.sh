@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://raw.github.com/moviepilot/hetzner-bootstrap/puppet-express/hetzner-postinstall.sh
+wget https://raw.githubusercontent.com/moviepilot/hetzner-bootstrap/puppet-express-16.04/hetzner-postinstall.sh
 chmod 755 hetzner-postinstall.sh
 echo "${SERVERNAME}" | egrep '^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$' || VALIDHOSTNAME="false"
 if [[ -n "$VALIDHOSTNAME" ]]; then
