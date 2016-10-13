@@ -9,7 +9,7 @@ apt-get -y install byobu curl wget
 wget https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
 dpkg -i puppetlabs-release-pc1-xenial.deb
 apt-get update
-apt-get -y install puppet-agent tmux
+apt-get -y install puppet-agent=1.4.2-1xenial tmux
 sed -i '/templatedir/a pluginsync=true' /etc/puppet/puppet.conf
 
 # install default ssh keys
